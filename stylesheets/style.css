@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x:hidden; overflow-y:scroll; padding-top: 70px;  min-height: 100%;
+}
+
+ul, li{
+  list-style: none;  /*ul li 태그에 리스트 스타일을 없애줌*/
+}
+
+a {
+  text-decoration: none;
+}
+
+.mainmenu:after{content:'';display:block; clear:both;}
+
+header {	
+	  margin-top:20px;
+    background-color: azure; 
+	  height:50px; 
+	  /*overflow:hidden;*/ 
+    transition: height 0.4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: 1000px;
+}
+
+
+nav {width:960px; margin:0 auto;}
+
+nav > ul > li {float:left; line-height:50px; padding:0 35px; position: relative;}
+nav > ul > li ul{ width:100%;  position: absolute; display: none;}
+/* nav > ul > li ul li{white-space:nowrap;} */
+nav > ul > li:hover ul {display: block;}
+nav > ul > li ul li:hover { display: block; cursor: pointer;}
+
+.backimg{
+  background: url(/images/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain; /*해당 div 사이즈안에 꽉차도록 설정됨*/
+  width:  1500px; 
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 100px;
+  padding-bottom: 100px;
+  bottom : 0;
+}
+
+#wrap {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+footer {
+  background-color:#f5eee4;
+  width: 100%;
+  height: 100px;
+  position : absolute;
+  bottom : 0;
+}
