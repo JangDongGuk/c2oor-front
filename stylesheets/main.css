@@ -4,7 +4,7 @@
 }
 
 body {
-  overflow-x:hidden; overflow-y:scroll; padding-top: 70px;  min-height: 100%;
+  overflow-x:hidden; overflow-y:scroll; padding-top: 50px;  min-height: 100%;
 }
 
 ul, li{
@@ -18,10 +18,9 @@ a {
 .mainmenu:after{content:'';display:block; clear:both;}
 
 header {	
-	  margin-top:20px;
     background-color: azure; 
 	  height:50px; 
-	  /*overflow:hidden;*/ 
+	  overflow:hidden; 
     transition: height 0.4s;
     position: absolute;
     top: 0;
@@ -31,13 +30,14 @@ header {
 }
 
 
-nav {width:960px; margin:0 auto;}
+nav {width:960px; }
 
 nav > ul > li {float:left; line-height:50px; padding:0 35px; position: relative;}
 nav > ul > li ul{ width:100%;  position: absolute; display: none;}
 /* nav > ul > li ul li{white-space:nowrap;} */
-nav > ul > li:hover ul {display: block;}
-nav > ul > li ul li:hover { display: block; cursor: pointer;}
+nav > ul > li:hover ul {display: block; cursor: pointer;}
+nav > ul > li ul li:hover { cursor: pointer;}
+
 
 .backimg{
   background: url(/images/background.png);
@@ -45,13 +45,15 @@ nav > ul > li ul li:hover { display: block; cursor: pointer;}
   background-position: center;
   background-size:contain; /*해당 div 사이즈안에 꽉차도록 설정됨*/
   width:  1500px; 
-  height: 700px;
+  height: 600px;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 100px;
   padding-bottom: 100px;
-  bottom : 0;
+  margin: 0;
+  padding: 0;
+  top: 100px;
+  
+  
 }
 
 #wrap {
@@ -63,7 +65,8 @@ nav > ul > li ul li:hover { display: block; cursor: pointer;}
 footer {
   background-color:#f5eee4;
   width: 100%;
-  height: 100px;
+  height: 50px;
   position : absolute;
   bottom : 0;
+
 }
