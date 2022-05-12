@@ -1,4 +1,3 @@
-
 function popup1() {
     window.open("popup1.html", "개인동의약관", "top=100px,left=200px,width=800px,height=600px;");
 }
@@ -23,3 +22,4 @@ function selectAll(selectAll)  {
       checkbox.checked = selectAll.checked
     })
   }
+
