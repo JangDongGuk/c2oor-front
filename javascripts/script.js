@@ -1,9 +1,9 @@
 const header = document.querySelector('header');
 
 var mainMenuList = document.querySelectorAll('.mainmenu > li');
-var subMenu = document.querySelectorAll('.submenu');
-var subMenuHeight = 0;
-var headerHeight = header.offsetHeight;
+let subMenu = document.querySelectorAll('.submenu');
+let subMenuHeight = 0;
+let headerHeight = header.offsetHeight;
 
 
     for (var i = 0; i < mainMenuList.length; i++ ) {
