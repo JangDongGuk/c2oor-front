@@ -8,23 +8,41 @@
     <link rel="stylesheet" href="/stylesheets/signup.css">
     <script defer src ='/javascripts/popup.js'></script>
     <script defer src ='/javascripts/singup.js'></script>
+    <script defer src ='/javascripts/mail.js'></script>
     
 </head>
 <body>
     <div class="signupbox">
         <h3>Member Join</h3>
-        <form action="login.html" name="sign_form" method="post">
-            <fieldset>
+        <div class ="signupbox2">
+            <div class ="signupbox3">    
                 <label for="name">NAME</label>
                 <input type="text" id="name" name="name" placeholder="이름을 입력해 주세요." required>
+
                 <label for="id">ID</label>
-                <input type="text" id="id" name="id" placeholder="아이디를 입력해 주세요." required>
+                <input type="text" id="nickname" name="nickname" placeholder="아이디를 입력해 주세요." required>
+
                 <label for="pwd">PASSWORD</label>
-                <input type="password" id="pwd" name="pwd" placeholder="비밀번호를 입력해 주세요." required>
+                <input type="password" id="password" name="password" placeholder="비밀번호를 입력해 주세요." required>
+
                 <label for="cnfirm_pwd">CONFIRM PASSWORD</label>
                 <input type="password" id="cnfirm_pwd" name="cnfirm_pwd" placeholder="비밀번호를 입력해 주세요."required>
+
                 <label for="email">E-MAIL</label>
-                <input type="text" id="email" name="email"placeholder="이메일을 입력해 주세요."required>
+                <input type="text" id="email" name="email" placeholder="이메일을 입력해 주세요."required>
+
+                <label for="email_check">이메일인증번호</label>
+                <button type="button" class="email_check" id="Timer" onclick= "sendemail()"> 인증번호받기</button>
+                
+                
+                <input for="email_check" id="emailNum" name="email_check" placeholder="인증번호6자리" required></input>              
+                <span>3:00</span>
+                <div>
+                    <button class="emailNum_check" id ="emailNum" onclick= "emailNum_check()"> 인증번호확인 </button>
+                
+                    <!-- emailNum(), 이게 reids에 저장되는 것인데 ; post에 의미가 안맞아서 일단보류-->
+                </div>
+                
                 <label for="phone">PHONE</label>
                 <input type="text" id="phone" name="phone" placeholder="'-' 없이 숫자만 입력해주세요."required>
                 <div class="check1">
@@ -41,11 +59,9 @@
                 <label>전체동의</label>
                 <input type="checkbox"  name="chkall" onclick="selectAll(this)"  class="check3-input">
                 </div>
-                <button type="button" onclick="singup_check();"> 가입완료 </button>
-                
-            </fieldset>
-            
-        </form>
+                <button  onclick="singup_check();" class="submit">가입완료</button>
+                </div>
+        </div>
     </div>
 </body>
 </html>

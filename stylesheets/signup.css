@@ -15,14 +15,14 @@ body { background-color: #ededed;  overflow-y:scroll;}
     text-align: center;
 }
 
-.signupbox form {
-    width: 50%; height: 600px;
+.signupbox2 {
+    width: 50%; height: 670px;
     background-color: #fff;
     padding: 20px; box-sizing: border-box;
     margin: 0 auto;
 }
 
-.signupbox fieldset {
+.signupbox3 {
     border: none;
     width: 460px;
     padding-left: 130px;
@@ -68,12 +68,48 @@ body { background-color: #ededed;  overflow-y:scroll;}
     width: 50px;
 }
 
-.signupbox button { /*가입완료 버튼*/
+.signupbox .submit { /*가입완료 버튼*/
     display: block;
     width: 100px; height: 50px;
     margin: 60px;
     border: none;
+    transition-duration: 0.3s;
     background-color: rosybrown;
     color: #fff; font-size: 15px; font-weight: bold;
     margin-top: 20px;
+}
+
+.signupbox .email_check { /*이메일인증버튼*/
+    width: 100px; height: 25px;
+    background-color:  #E4EBF5;
+    position:absolute;
+    top: 370px; left: 880px;
+}
+
+.signupbox .emailNum_check { /*이메일 인증번호 확인 버튼*/
+    width: 100px; height: 25px;
+    background-color:  #E4EBF5;
+    position:absolute;
+    top: 425px; left: 880px;
+}
+
+span{ 
+    color:red;
+    border: 1px solid black;
+    visibility: hidden;
+}
+
+.signupbox .submit:active {
+    box-shadow: inset -.3rem -.1rem 1.4rem  #FBFBFB, inset .3rem .4rem .8rem #BEC5D0; 
+    cursor: pointer;
+}
+
+.signupbox .email_check:active {
+    box-shadow: inset -.3rem -.1rem 1.4rem  #FBFBFB, inset .3rem .4rem .8rem #BEC5D0; 
+    cursor: pointer;
+}
+
+.signupbox .emailNum_check:active {
+    box-shadow: inset -.3rem -.1rem 1.4rem  #FBFBFB, inset .3rem .4rem .8rem #BEC5D0; 
+    cursor: pointer;
 }

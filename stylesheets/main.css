@@ -4,7 +4,7 @@
 }
 
 body {
-  overflow-x:hidden; overflow-y:scroll; padding-top: 50px;  min-height: 100%;
+  overflow-x:hidden; overflow-x:scroll; overflow-y:scroll; padding-top: 20px;  min-height: 100%;
 }
 
 ul, li{
@@ -17,8 +17,10 @@ a {
 
 .mainmenu:after{content:'';display:block; clear:both;}
 
+.mainmenu { cursor: pointer; }
+
 header {	
-    background-color: azure; 
+    background-color: #f5eee4;
 	  height:50px; 
 	  overflow:hidden; 
     transition: height 0.4s;
@@ -26,34 +28,29 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    margin-left: 1000px;
+   
 }
 
 
-nav {width:960px; }
+nav { width:960px; }
 
 nav > ul > li {float:left; line-height:50px; padding:0 35px; position: relative;}
+/*float:left; 메뉴를 왼쪽부터 표시한다 // position: relative; 순서대로 표시한다  */
 nav > ul > li ul{ width:100%;  position: absolute; display: none;}
-/* nav > ul > li ul li{white-space:nowrap;} */
 nav > ul > li:hover ul {display: block; cursor: pointer;}
 nav > ul > li ul li:hover { cursor: pointer;}
-
 
 .backimg{
   background: url(/images/background.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size:contain; /*해당 div 사이즈안에 꽉차도록 설정됨*/
-  width:  1500px; 
-  height: 600px;
+  width:  100%; 
+  height: 560px;
   align-items: center;
   justify-content: center;
-  padding-bottom: 100px;
   margin: 0;
   padding: 0;
-  top: 100px;
-  
-  
 }
 
 #wrap {
@@ -68,5 +65,4 @@ footer {
   height: 100px;
   position : absolute;
   bottom : 0;
-
 }
