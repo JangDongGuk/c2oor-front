@@ -1,47 +1,49 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>c2oor</title>
     <link rel="stylesheet" href="/stylesheets/main.css">
     <script defer src ='/javascripts/main.js'></script>
     <script defer src ='/javascripts/token.js'></script>
     <script defer src ='/javascripts/login.js'></script>
+    <title>c2oor</title>
 </head>
 <body>
-<div id ='wrap'>
-<header>
-    <nav>
-        <ul class="mainmenu"> 
-            <li>store
-                <ul class = "submenu">
-                    <li><a href="#" onclick="token();">Outwear</a></li>
-                    <li><a href="Knitwear">Knitwear</a></li>
-                    <li><a href="Sweatshirt">Sweatshirt</a></li>
-                    <li><a href="Shirt">Shirt</a></li>
-                    <li><a href="T-shirt">T-shirt</a></li>
-                </ul>
-            </li>
-            <li >info
-                <ul class = "submenu">
-                </ul>
-            </li>
-            <li><a onclick="logout()">logout</a>
-                <ul class = "submenu">
-                </ul>
-            </li>
-            <li>cart
-                <ul class = "submenu">
-                </ul>
-            </li>			
-
-        </ul>
-    </nav>
-</header>
+    <div class="nav">
+       <div>
+           <a herf="main.html"></a>
+           <img src="/images/logo.png">
+       </div> 
+        <div class="mainmenu">
+            <ul class="mainList1"><span>store</span>
+                <div class ="submenu" id="submenu1">
+                    <li><a  onclick="token()">T-shirt</a></li>
+                    <li><a href="outwear.html">Knitwear</a></li>
+                    <li><a href="outwear.html">Sweatshirt</a></li>
+                    <li><a href="outwear.html">Shirt</a></li>
+                </div>
+            </ul>
+            <ul class="mainList2"><span>info</span>
+                <div class ="submenu" id="submenu2">
+                    <li><a href="outwear.html">회사정보</a></li>
+                    <li><a href="outwear.html">오시는길</a></li>
+                    <li><a href="outwear.html">Q&A</a></li>
+                    <li><a href="outwear.html">고객센터</a></li>
+                </div>
+            </ul>
+            <ul class="mainList3"><span onclick="logout()">logout</span>
+                <div class ="submenu" id="submenu3">
+                </div>    
+            </ul>    
+            <ul class="mainList4"><span>cart</span>
+                <div class ="submenu" id="submenu4"></div>    
+            </ul>
+        </div>
+    </div>
     <div class="backimg"> 
-</div>
+    </div>
     <footer>
         <nav>
             <p>회사주소: 인천광역시 서구 </p>
@@ -52,7 +54,5 @@
             <span>근무시간 : AM 11:00 ~ PM 5:00</span>
         </p>
     </footer>
-
-</div>
-</body> 
+</body>
 </html>

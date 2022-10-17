@@ -23,9 +23,9 @@ function login() {
         .then(data => {
             if(data.message == "success") {
                 return   document.cookie = 'token' + '=' + data['token'],
+                window.sessionStorage.setItem("user_id", data.user_id),
                 location.replace('http://127.0.0.1:5500/html/main2.html')
             }
-         
         })
         .catch(err => {
             console.log('Fetch err', err);

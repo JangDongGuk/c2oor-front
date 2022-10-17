@@ -4,11 +4,11 @@ li { list-style: none; }
 a { text-decoration: none; }
 button { cursor:pointer; }
 
-body { background-color: #ededed;}  /* 전체배경을 회색으로 */
+body { background-color: #ededed;}
 
 .loginbox {
     width: 700px; height: 500px;
-    margin: 0 auto;  /* 블록요소를 부모영역에서 가운데 처리 */
+    margin: 0 auto;
 }
 
 .loginbox h3 {
@@ -25,8 +25,6 @@ body { background-color: #ededed;}  /* 전체배경을 회색으로 */
     background-color: #fff;
     padding: 100px; box-sizing:border-box;
 }
-
-
 
 .loginbox label {
     display: block;

@@ -1,35 +1,78 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/outwear.css">
-    <title>list</title>
+    <script defer src ='/javascripts/main.js'></script>
+    <script defer src ='/javascripts/token.js'></script>
+    <script defer src ='/javascripts/login.js'></script>
+    <script defer src ='/javascripts/listPage.js'></script>
+    <title>c2oor</title>
 </head>
 <body>
-    <div class ="nav">
-        <div class ="logo">
-            <a href="main.html">
-            <img src="/images/logo.png" alt="">
-            </a>
-        </div>
-        <div class="nav_but">
-            <ul class="mainmenu">
-                <li>store</li>
-                    <ul class="submenu">
-                        <li><a href="outwear.html">Outwear</a></li>
-                        <li><a href="outwear.html">Outwear</a></li>
-                        <li><a href="outwear.html">Outwear</a></li>
-                        <li><a href="outwear.html">Outwear</a></li>
-                    </ul>
-                <li>info</li>
-                <li>login</li>
-                <li>cart</li>
+    <div class="nav">
+        <a href="main.html">
+           <img class="logoImg" src="/images/logo.png">
+        </a>
+        <div class="mainmenu"> 
+            <ul class="mainList1"><span>store</span>
+                <div class ="submenu" id="submenu1">
+                    <li><a href="outwear.html" onclick="token()">T-shirt</a></li>
+                    <li><a href="outwear.html">Knitwear</a></li>
+                    <li><a href="outwear.html">Sweatshirt</a></li>
+                    <li><a href="outwear.html">Shirt</a></li>
+                </div>
             </ul>
-
-                
+            <ul class="mainList2"><span>info</span>
+                <div class ="submenu" id="submenu2">
+                    <li><a href="outwear.html">회사정보</a></li>
+                    <li><a href="outwear.html">오시는길</a></li>
+                    <li><a href="outwear.html">Q&A</a></li>
+                    <li><a href="outwear.html">고객센터</a></li>
+                </div>
+            </ul>
+            <ul class="mainList3"><span onclick="logout()">logout</span>
+                <div class ="submenu" id="submenu3">
+                </div>    
+            </ul>    
+            <ul class="mainList4"><span>cart</span>
+                <div class ="submenu" id="submenu4"></div>    
+            </ul>
         </div>
-    </div> 
+    </div>
+    <div class="container">
+        <ul class="list-T">
+            <li>
+                <a href="detail_page.html">
+                <img src="/images/T-shirt/T-1.jpg">
+                </a>
+                <div>
+                    <a href="detail_page.html" class="T-name">이름</a>
+                    <br>KRW 가격표시
+                </div>
+            </li>
+            <li><img src="/images/T-shirt/T-2.jpg"></li>
+            <li><img src="/images/T-shirt/T-3.jpg"></li>
+            <li><img src="/images/T-shirt/T-4.jpg"></li>
+            <li><img src="/images/T-shirt/T-5.jpg"></li>
+            <li><img src="/images/T-shirt/T-6.jpg"></li>
+            <li><img src="/images/T-shirt/T-7.jpg"></li>
+            <li><img src="/images/T-shirt/T-8.jpg"></li>
+            <li><img src="/images/T-shirt/T-9.jpg"></li>
+            <li><img src="/images/T-shirt/T-1.jpg"></li>
+            <li><img src="/images/T-shirt/T-2.jpg"></li>
+            <li><img src="/images/T-shirt/T-3.jpg"></li>
+        </ul>
+    </div>
+    <div class="pageNum">
+        <a href="#none" id="L-arrow"><img src="/images/L-arrow.png" class="arrow" ></a>
+        <ol>
+            <li><button>1</button></li>
+            <li><button>2</button></li>
+        </ol>
+        <a href="outwear2.html"><img src="/images/R-arrow.png" class="arrow"></a>
+    </div>
 </body>
 </html>

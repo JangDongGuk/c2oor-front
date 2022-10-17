@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/outwear.css">
+    <script defer src ='/javascripts/main.js'></script>
+    <script defer src ='/javascripts/token.js'></script>
+    <script defer src ='/javascripts/login.js'></script>
+    <script defer src ='/javascripts/listPage.js'></script>
+    <title>c2oor</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="main.html">
+           <img class="logoImg" src="/images/logo.png">
+        </a>
+        <div class="mainmenu">
+            <ul class="mainList1"><span>store</span>
+                <div class ="submenu" id="submenu1">
+                    <li><a href="outwear.html" onclick="token()">T-shirt</a></li>
+                    <li><a href="outwear.html">Knitwear</a></li>
+                    <li><a href="outwear.html">Sweatshirt</a></li>
+                    <li><a href="outwear.html">Shirt</a></li>
+                </div>
+            </ul>
+            <ul class="mainList2"><span>info</span>
+                <div class ="submenu" id="submenu2">
+                    <li><a href="outwear.html">회사정보</a></li>
+                    <li><a href="outwear.html">오시는길</a></li>
+                    <li><a href="outwear.html">Q&A</a></li>
+                    <li><a href="outwear.html">고객센터</a></li>
+                </div>
+            </ul>
+            <ul class="mainList3"><span onclick="logout()">logout</span>
+                <div class ="submenu" id="submenu3">
+                </div>    
+            </ul>    
+            <ul class="mainList4"><span>cart</span>
+                <div class ="submenu" id="submenu4"></div>    
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="list-T">
+            <li>
+                <a href="main.html">
+                <img src="/images/T-1.jpg">
+                </a>
+                <div>
+                    <a href="main.html" class="T-name">이름</a>
+                    <br>KRW 가격표시
+                </div>
+            </li>
+            <li><img src="/images/T-1.jpg"></li>
+            <li><img src="/images/T-1.jpg"></li>
+            <li><img src="/images/T-1.jpg"></li>
+            <li><img src="/images/T-1.jpg"></li>
+            <li><img src="/images/T-1.jpg"></li>
+            <li><img src="/images/T-1.jpg"></li>
+            <li><img src="/images/T-1.jpg"></li>
+            <li><img src="/images/T-1.jpg"></li>
+            <li><img src="/images/T-1.jpg"></li>
+            <li><img src="/images/T-1.jpg"></li>
+            <li><img src="/images/T-1.jpg"></li>
+        </ul>
+    </div>
+    <div class="pageNum">
+        <a href="#none" id="L-arrow" ><img src="/images/L-arrow.png" class="arrow" ></a>
+        <ol>
+            <li>1</li>
+            <li>2</li>
+        </ol>
+        <a href="outwear2.thml"><img src="/images/R-arrow.png" class="arrow"></a>
+    </div>
+</body>
+</html>

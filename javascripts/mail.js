@@ -1,4 +1,3 @@
-
 function sendemail() {
     const email = document.getElementById("email");
     const data = email.value
@@ -28,9 +27,9 @@ function sendemail() {
             email: data2
         }),
     })
-    .then(res => res.json())  // 여기는 server에서 응답받아온 데이터를 보여주는 코드이다
+    .then(res => res.json())
     .then(data =>{
-        sessionStorage.setItem("emailNum", data.emailNum) //setItem함수는 key, value 형식으로 저장됨  // key는 "emailNum" value는 서버에서 보내준 데이터이다.
+        sessionStorage.setItem("emailNum", data.emailNum)
     }).catch(err => { 
         console.log('Fetch Error', err);
     });
@@ -51,15 +50,13 @@ function emailNum() {
             email:email.value
         }),
     })
-    .then(res => res.json())  // 여기는 server에서 응답받아온 데이터를 보여주는 코드이다
+    .then(res => res.json())
     .then(data =>{
         console.log(data)
     }).catch(err => { 
         console.log('Fetch Error', err);
     });
 };
-
-// 127.0.1.1:3000 이렇게 써야한다 또는 localhost:3000
 
 function timer() {
 
@@ -130,4 +127,3 @@ function emailNum_check() {
     }    
     alert("인증번호가 다릅니다. 다시 확인요청 바랍니다.")
 }
-

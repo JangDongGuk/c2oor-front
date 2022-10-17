@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/detail_page.css">
+    <script defer src ='/javascripts/main.js'></script>
+    <script defer src ='/javascripts/token.js'></script>
+    <script defer src ='/javascripts/detail_page.js'></script>
+    <script defer src ='/javascripts/review.js'></script>
+    <title>c2oor</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="main.html">
+            <img src="/images/logo.png" class="logo_img">
+        </a>
+        <div class="mainmenu">
+            <ul class="mainList1"><span class="list">store</span>
+                <div class ="submenu" id="submenu1">
+                    <li><a href="outwear.html" onclick="token()">T-shirt</a></li>
+                    <li><a href="outwear.html">Knitwear</a></li>
+                    <li><a href="outwear.html">Sweatshirt</a></li>
+                    <li><a href="outwear.html">Shirt</a></li>
+                </div>
+            </ul>
+            <ul class="mainList2"><span class="list">info</span>
+                <div class ="submenu" id="submenu2">
+                    <li><a href="outwear.html">회사정보</a></li>
+                    <li><a href="outwear.html">오시는길</a></li>
+                    <li><a href="outwear.html">Q&A</a></li>
+                    <li><a href="outwear.html">고객센터</a></li>
+                </div>
+            </ul>
+            <ul class="mainList3"><span OnClick="location.href='login.html'" class="list">login</span>
+                <div class ="submenu" id="submenu3">
+                </div>    
+            </ul>    
+            <ul class="mainList4"><span class="list">cart</span>
+                <div class ="submenu" id="submenu4"></div>    
+            </ul>
+        </div>
+    </div>
+    <div class="production">
+        <div class="production_img">
+            <img class="T-1_img" id="T-1_img" src="/images/T-shirt/T-1.jpg"> 
+        </div>
+        <div class="production_info">
+            <div class="T-name" id="T-name"></div>
+            <div class="T-price" id="T-price"></div>
+            <table class="size_table">
+                <tr>
+                    <td class="S-size" onclick="S_Size_Click()" style="background-color:white;">S</td>
+                    <td class="M-size" onclick="M_Size_Click()" style="background-color:white;">M</td>
+                    <td class="L-size" onclick="L_Size_Click()" style="background-color:white;">L</td>
+                </tr>
+            </table>
+            <div class="production_check">
+                <div class="S_container"  id="S_container" onclick="S_Size_Click()">
+                    <div class="CE0_S" onclick="event.cancelBubble=true">
+                        <div class="CEO_text">CEO-반팔티 (S)</div>
+                        <div class="minus_img"><img src="/images/minus.png" id="minus_img" onclick="count('minus_S')"></div>
+                        <div id="count_S">0</div>
+                        <div class="plus_img"><img src="/images/plus.png" id="plus_img" onclick="count('plus_S')"></div>
+                        <div class="cansle_img"><img src="/images/cansle.png" id="cansle_img" onclick="count('cansle_S')"></div>
+                    </div>
+                </div>
+                <div class="M_container" id="M_container" onclick="M_Size_Click()">
+                    <div class="CE0_M" onclick="event.cancelBubble=true">
+                        <div class="CEO_text">CEO-반팔티(M)</div>
+                        <div class="minus_img"><img src="/images/minus.png" id="minus_img" onclick="count('minus_M')"></div>
+                        <div id="count_M">0</div>
+                        <div class="plus_img"><img src="/images/plus.png" id="plus_img" onclick="count('plus_M')"></div>
+                        <div class="cansle_img"><img src="/images/cansle.png" id="cansle_img" onclick="count('cansle_M')"></div>
+                    </div>
+                </div>
+                <div class="L_container" id="L_container" onclick="L_Size_Click()">
+                    <div class="CE0_L" onclick="event.cancelBubble=true">
+                        <div class="CEO_text">CEO-반팔티 (L)</div>
+                        <div class="minus_img"><img src="/images/minus.png" id="minus_img" onclick="count('minus_L')"></div>
+                        <div id="count_L">0</div>
+                        <div class="plus_img"><img src="/images/plus.png" id="plus_img" onclick="count('plus_L')"></div>
+                        <div class="cansle_img"><img src="/images/cansle.png" id="cansle_img" onclick="count('cansle_L')"></div>
+                    </div>
+                </div>
+                <table class="underscore"></table>
+                <div class="total">
+                    <span id="price">Total: KRW </span>
+                    <span id="quantity">(0개)</span>
+                </div>
+                <div class="add_cart"><input tpye='button' value="add to cart" onclick=""></div>
+                <div class="text">
+                    Size<br>
+                    S 총장 108cm 어깨 51.5cm 가슴 59cm 소매 60.9cm<br>
+                    M 총장 109.5cm 어깨 53cm 가슴 61.5cm 소매 62.2cm<br>
+                    L 총장 111cm 어깨 54.5cm 가슴 64cm 소매 63.5cm<br>
+                </div>    
+                <div class="text">   
+                    Fabric Description<br>
+                    WOOL 67% POLYAMIDE 23% CASHMERE 10%<br>
+                    FABRIC MADE IN ITALY<br>
+                    Model Size  189cm<br>
+                    Model Fitting L<br>
+                </div>
+                <div class="text">
+                    Info<br>
+                    - 검증된 공정 과정을 통하여 우수한 모직 원단을 제공하는 이탈리아 MTR 원단을 사용<br>
+                    - 진귀한 산양 캐시미어가 혼용된 그레이드가 높은 프리미엄 원단<br>
+                    - 전체적인 슬림핏 실루엣<br>
+                    - 포켓, 라펠, 후면부 스티치 디테일<br>
+                    - 뒤트임 절개로 편안한 착용감<br>
+                    - 2버튼 플라이 디테일<br>
+                    - 웰트 포켓 디테일<br>
+                    - 드라이 크리닝<br>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <table class="underscore2"></table>
+    <div class="Review">
+        <div class ="aa">
+            <div class="poto"><img src="/images/T-shirt/T-1.jpg"></div>
+            <div class="Review_text"><textarea id="review_text"  placeholder=" 리뷰를 남겨보세요."></textarea></div>
+            <div class="button_review"> 
+                <input type="button" class="creat_review" value="리뷰등록" onclick="Review()"></input>
+            </div>
+        </div>
+        <table class="review_underbar"></table>
+    </div>
+    <footer>
+        <nav>
+            <p>회사주소: 인천광역시 서구 </p>
+        </nav> 
+        <p>
+            <span>고객센터 : 1111-1111</span><br/>
+            <span>이메일 : c2oor@gmail.com</span><br/>
+            <span>근무시간 : AM 11:00 ~ PM 5:00</span>
+        </p>
+    </footer>
+</body>
+</html>

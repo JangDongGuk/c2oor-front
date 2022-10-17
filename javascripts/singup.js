@@ -39,11 +39,9 @@ function singup_check() {
             return alert("이메일 형식에 따라주세요."), email.focus();
         };
     
-    
         if(sessionStorage.getItem("emailNum") != emailNum.value) {  
             return alert("이메일 인증번호가 올바르지 않습니다."), emailNum.focus();
         }
-        
         
         if (!regexp_phone.test(phone.value)) { 
             return alert("-(하이폰)은 제외 하고 숫자만 입력해주세요."), phone.focus();

@@ -1,0 +1,259 @@
+body { margin: 0; padding: 0; min-height: 100%; }
+ 
+a { text-decoration: none; color: black; }
+
+a:link { color:black; }
+
+p { margin: auto; height: 25px; }
+
+ul { display:flex; flex-direction: column; }
+
+ul, li{ list-style: none; margin: 0; padding:0;}
+
+.nav {
+    display:flex;
+    justify-content: space-between;
+    width: 1000px; height: 150px;
+    margin: auto;
+}
+
+.logo_img {
+    width: 200px; height:70px; margin:25px 0 0 0;
+}
+
+.mainmenu{
+    display:flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 25px;
+    margin: 20px;
+}
+
+.mainList1, .mainList2, .mainList3, .mainList4 {
+    background-color: white;
+    transition: height 0.4s;
+    overflow:hidden;
+}
+
+.list:hover {
+    color:green; cursor:pointer;
+}
+
+.submenu:hover {
+    cursor:pointer;
+    color:red;
+}
+
+.production {
+    display: flex;
+}
+
+.production_img {
+    display:inline-block;
+    width:700px; height: 700px;
+    padding: 0 100px;
+}
+
+.production_img > img {
+    width: 100%; height: 100%;
+}
+
+.production_info {
+    width: 300px; height: 500px;
+    
+}
+
+.size_table{
+    margin-top: 15px;
+    border:1px solid;
+    border-collapse: collapse;
+}
+
+.S-size, .M-size, .L-size {
+    border: 1px solid;
+    border-collapse: collapse;
+    font-size: 20px;
+    padding: 10px 25px;
+    color: cornflowerblue;
+}
+
+.underscore {
+    border: 1px solid;
+    border-color:#353535;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.T-name, .T-price {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.minus_img, .plus_img, .cansle_img {
+    width: 20px; height: 20px;
+    cursor: pointer;
+}
+
+.minus_img, .plus_img {
+    padding: 0 20px;
+}
+
+.minus_img > img, .plus_img > img, .cansle_img > img {
+    width: 100%; height: 100%;
+}
+
+.CE0_S, .CE0_M, .CE0_L {
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    margin-top: 20px;
+}
+.S_container, .M_container, .L_container {
+    display: none;
+}
+
+.CEO_text {
+    padding-right: 230px;
+}
+
+.production_check {
+    width: 500px;
+}
+
+.total {
+    margin-top: 20px;
+}
+
+.add_cart {
+    width: 500px; height: 20px;
+    margin-top: 20px;
+}
+
+.add_cart > input {
+    width:100%; height: 100%;
+    text-align: center;
+}
+
+.text {
+    margin-top: 40px;
+    font-style: italic;
+}
+
+.underscore2 {
+    border: 1px solid;
+    border-color:#353535;
+    width: 1300px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.Review {
+    display:inline-block;
+    width: 800px; height: 2000px;
+    background-color: darkgrey;
+    margin-top: 70px;
+    margin-left: 300px;
+}
+
+.poto{
+    width: 100px; height: 106px;
+}
+
+.poto > img{
+    width: 100%; height: 100%;
+}
+
+.Review_text {
+    background-color: white;
+    width: 335px; height: 100px;
+}
+
+textarea{
+    font-size: 15px;
+    width: 100%; height: 100%;
+    resize: none;
+}
+
+.creat_review {
+    width: 65px; height: 106px;
+}
+
+.review_underbar {
+    border: 1px solid;
+    margin-top: 60px;
+    margin-left: 50px;
+    width: 700px;
+    color: blue;
+}
+
+.aa {
+    display: flex;
+    justify-content: left;
+    width: 500px; height: 100px;
+    margin-top: 40px;
+    margin-left: 100px;
+    color: blueviolet;
+}
+
+.bb {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 500px; height: 100px;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.user_nickname{
+    width: 100px; height: 66px;
+    background-color: red;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.button_edit1, .button_edit2, .button_edit3 {
+   width: 65px; height:34%;
+}
+
+.cc {
+    width: 65px; height: 106px;
+    background-color: darkgrey;
+}
+
+.time {
+    margin-top: 80px;
+    font-size: 5px;
+}
+
+.box {
+    width: 100px; height: 106;
+}
+
+#update_box {
+    display: flex;
+
+    background-color: white;
+    width: 400px; height: 70px;
+    margin-left: 100px;
+}
+
+#update_button1, #update_button2 {
+    width: 65px; height: 38px;
+}
+
+#update_reviewbox{
+    width: 65px; height: 106px;
+    background-color: darkgrey;
+}
+
+#update_text {
+    width: 100%; height: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    padding-top: 50px;
+    margin-top: 40px;
+}

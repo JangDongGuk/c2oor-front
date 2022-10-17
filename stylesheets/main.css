@@ -1,68 +1,64 @@
-* {
-  margin: 0;
-  padding: 0;
+body { margin: auto; min-height: 100%; }
+
+a { text-decoration: none; color: black; }
+
+a:link { color:black; }
+
+p { margin: auto; height: 25px; }
+
+ul { display:flex; flex-direction: column; }
+
+ul, li{ list-style: none; margin: 0; padding:0; }
+
+.nav {
+    display:flex;
+    justify-content: space-between;
+    width: 1000px; height: 150px;
+    margin: auto;
 }
 
-body {
-  overflow-x:hidden; overflow-x:scroll; overflow-y:scroll; padding-top: 20px;  min-height: 100%;
+img {
+    width: 200px; height:70px; margin:25px 0 0 0;
 }
 
-ul, li{
-  list-style: none;  /*ul li 태그에 리스트 스타일을 없애줌*/
+.mainmenu{
+    display:flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 25px;
+    margin: 20px;
 }
 
-a {
-  text-decoration: none;
-}
-
-.mainmenu:after{content:'';display:block; clear:both;}
-
-.mainmenu { cursor: pointer; }
-
-header {	
-    background-color: #f5eee4;
-	  height:50px; 
-	  overflow:hidden; 
+.mainList1, .mainList2, .mainList3, .mainList4{
+    background-color: white;
     transition: height 0.4s;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-   
+    overflow:hidden;
 }
 
-
-nav { width:960px; }
-
-nav > ul > li {float:left; line-height:50px; padding:0 35px; position: relative;}
-/*float:left; 메뉴를 왼쪽부터 표시한다 // position: relative; 순서대로 표시한다  */
-nav > ul > li ul{ width:100%;  position: absolute; display: none;}
-nav > ul > li:hover ul {display: block; cursor: pointer;}
-nav > ul > li ul li:hover { cursor: pointer;}
-
-.backimg{
-  background: url(/images/background.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:contain; /*해당 div 사이즈안에 꽉차도록 설정됨*/
-  width:  100%; 
-  height: 560px;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+span:hover {
+    color:green; cursor:pointer;
 }
 
-#wrap {
-  min-height: 100vh;
-  position: relative;
-  width: 100%;
+.submenu:hover {
+    cursor:pointer;
+    color:red;
+}
+
+.backimg {
+    background: url(/images/background.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    max-width:  100%; 
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
-  background-color:#f5eee4;
-  width: 100%;
-  height: 100px;
-  position : absolute;
-  bottom : 0;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
 }
