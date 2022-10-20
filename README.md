@@ -17,5 +17,11 @@
 - 리뷰 C.U.D API 기능구현
 - 수량 카운트 기능구현
 
+## 구현페이지
+- 메인페이지 
+<img src= "https://user-images.githubusercontent.com/80239527/196883420-a1e80c98-5c3a-45c2-b5c9-bddc72367dc2.gif">
+- 상세페이지
+
+
 ## Reference
 - 이 프로젝트는 [coor] https://coor.kr/ 를 참조하여 학습 목적으로 만들었습니다.
