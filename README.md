@@ -17,12 +17,20 @@
 - 리뷰 C.U.D API 기능구현
 - 수량 카운트 기능구현
 
-## 구현페이지
+## 구현기능 및 페이지 gif
 - 메인페이지 
 <img src= "https://user-images.githubusercontent.com/80239527/196883420-a1e80c98-5c3a-45c2-b5c9-bddc72367dc2.gif">
+
 - 상세페이지
-- 회원가입
+<img src="https://user-images.githubusercontent.com/80239527/196887488-acdc475a-0b8a-43d8-8b5d-39d51416b138.gif">
+
+- 회원가입 기능
 <img src="https://user-images.githubusercontent.com/80239527/196884293-546842c8-d701-4339-bb98-53547e0624cf.gif">
+
+- 이메일 유효시간 기능
+
+- 
+
 
 
 ## Reference
