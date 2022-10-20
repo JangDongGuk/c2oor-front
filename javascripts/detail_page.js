@@ -142,31 +142,3 @@ function count(type) {
         console.log(err);
     }
 };
-
-// window.onload = function detail_data() {
-//     try{
-//         fetch('http://localhost:3000/production/production/1')
-//         .then(res => res.json())
-//         .then(res=> {
-//             console.log(res)
-//             if(res.message == 'success') {
-                
-//                 const img_1 = document.getElementById('T-1_img');
-//                 const prices = document.getElementById('T-price');
-//                 const T_name = document.getElementById('T-name');
-                
-//                 const img = res.result.img_url
-//                 const name = res.result.name
-//                 const price = res.result.price
-            
-//                 T_name.innerText = name
-//                 prices.innerText = "KRW "+ price
-//                 img_1.src = img
-//             }
-//         })
-//         return
-
-//     }catch(err) {
-//         console.log(err);
-//     }
-// };

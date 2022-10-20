@@ -24,7 +24,7 @@ function token() {
         .then(data => {
             console.log(data.message)
             if(data.message == "success") {
-                return location.href = "outwear.html"
+                return location.href = "outwear2.html"
            }
         })
         .catch((error) => console.log("error:", error));

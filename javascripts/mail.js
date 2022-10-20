@@ -97,7 +97,7 @@ function timer() {
 
 
 function checkNumPopup() {
-    window.open("mailpopup3.html","인증번호를 입력해주세요", "top=100px,left=200px,width=400px,height=250px;");
+    window.open("mailpopup3.html", "인증번호를 입력해주세요", "top=100px,left=200px,width=400px,height=250px;");
   }
 
 function hiddens() {

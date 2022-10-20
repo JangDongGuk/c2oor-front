@@ -74,7 +74,7 @@ function singup_check() {
         .then(res => {
             
             if(res.message == "success") {
-                return  location.replace('http://127.0.0.1:5500/html/login.html')
+                return location.replace('http://127.0.0.1:5500/html/login.html', create_signup())  
             }
         })
         .catch(err => {
@@ -85,4 +85,6 @@ function singup_check() {
     };
 };
 
-
+function create_signup() {
+    window.open("create_signup.html", "회원가입이 되셨습니다. 로그인후 이용하시길 바랍니다." ,"top=200px,left=400px,width=600px,height=400px;");
+}
