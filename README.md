@@ -28,12 +28,19 @@
 <img src="https://user-images.githubusercontent.com/80239527/196884293-546842c8-d701-4339-bb98-53547e0624cf.gif">
 
 - # 이메일 유효시간 기능
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/80239527/196890269-53092033-192f-4b30-877e-4cdd0237d808.gif"><img scr="https://user-images.githubusercontent.com/80239527/196890300-f114126c-d452-4827-a19f-fe66ea2c96c3.gif">
-</p>
+<img src="https://user-images.githubusercontent.com/80239527/196892158-31187346-3a64-4afb-b577-b920cac9f624.gif">
 
 - # 로그인 기능
 <img src="https://user-images.githubusercontent.com/80239527/196884390-48454a6c-f5b3-42c4-9d07-cd4bdc7e4aea.gif">
+
+- # 회원인증,인가 기능
+<img src="https://user-images.githubusercontent.com/80239527/196884408-15639b3c-fada-40b3-b0bd-eb5f9ea86230.gif">
+
+- # 수량 카운트 기능
+<img src="https://user-images.githubusercontent.com/80239527/196884501-dd6fed5f-921a-48c1-aa89-037b74cb27dc.gif">
+
+- # 리뷰 기능
+<img src="https://user-images.githubusercontent.com/80239527/196884512-00a116ee-8c70-4cad-a301-2ed4e1a4f455.gif">
 
 
 
