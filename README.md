@@ -13,9 +13,10 @@
 ## 구현기능
 - fech 함수를 이용하여 Backend 와 연동
 - setInterval 및 clearInterval 함수를 이용하여  e-mail 유효시간 구현 
-- for문 과 addEventListener 활용하여 드롭다운 메뉴 구현
+- 메인페이지 카테고리 for문 과 addEventListener 활용하여 드롭다운 메뉴 구현
 - 리뷰 C.U.D API 기능구현
-- 수량 카운트 기능구현
+- 상품 클릭시 수량 카운트 기능구현
+- 회원가입 기능구현
 
 ## 구현기능 및 페이지 gif
 - # 메인페이지 
