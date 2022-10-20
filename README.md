@@ -21,6 +21,8 @@
 - 메인페이지 
 <img src= "https://user-images.githubusercontent.com/80239527/196883420-a1e80c98-5c3a-45c2-b5c9-bddc72367dc2.gif">
 - 상세페이지
+- 회원가입
+<img src="https://user-images.githubusercontent.com/80239527/196884293-546842c8-d701-4339-bb98-53547e0624cf.gif">
 
 
 ## Reference
