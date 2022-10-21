@@ -22,7 +22,6 @@ function token() {
             location.replace('http://127.0.0.1:5500/html/login.html')
         })
         .then(data => {
-            console.log(data.message)
             if(data.message == "success") {
                 return location.href = "outwear2.html"
            }

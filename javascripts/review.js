@@ -79,8 +79,8 @@ function Review() {
         })
     } catch(err) {
         console.log(err)
-    }
-}
+    };
+};
 
 function update_review(index) {
     try{
@@ -112,11 +112,11 @@ function update_review(index) {
                 update_box.remove(parent)
 
             }
-        })
+        });
     }catch(e) {
         console.log(e);
-    }
-}
+    };
+};
 
 function update_div(index) {
     try{
@@ -173,11 +173,11 @@ function update_div(index) {
                 create_div(),
                 btn.removeEventListener('click',arguments.callee)
             }
-        })
+        });
     }catch(e) {
         console.log(e)
-    }
-}
+    };
+};
 
 function delete_text(index) {
     try{
@@ -189,8 +189,8 @@ function delete_text(index) {
         update_box.remove(parent)
     }catch(e) {
         console.log(e)
-    }
-}
+    };
+};
 
 function delete_review(index) {
     try{
@@ -217,8 +217,8 @@ function delete_review(index) {
             if(!res.ok) {
                 console.log('응답이 올바르지 않습니다.')
             }
-        })
+        });
     }catch(e) {
         console.log(e)
-    }
-}
+    };
+};

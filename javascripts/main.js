@@ -60,7 +60,4 @@ const headerHeight = mainList1.offsetHeight;
         mainMenuList4[i].addEventListener('mouseout', function(){
             mainList4.style.height = headerHeight +'px';
         });
-    }
-
-
-
+    };
